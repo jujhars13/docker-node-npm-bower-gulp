@@ -14,19 +14,19 @@ Your project directory should be mapped to the `/data` directory:
 
 #### Run `node`
 
-    docker run -it --rm -v ${PWD}:/data jujhars13/docker-node-npm-bower-gulp node
+    docker run -ti --rm -v ${PWD}:/data jujhars13/docker-node-npm-bower-gulp node
 
 #### Run `npm install`
 
-    docker run -it --rm -v ${PWD}:/data jujhars13/docker-node-npm-bower-gulp npm install
+    docker run --rm -v ${PWD}:/data jujhars13/docker-node-npm-bower-gulp npm install
 
 #### Run `bower install `
 
-    docker run -it --rm -v ${PWD}:/data jujhars13/docker-node-npm-bower-gulp bower install
+    docker run --rm -v ${PWD}:/data jujhars13/docker-node-npm-bower-gulp bower install
 
 #### Run `gulp build`
 
-    docker run -it --rm -v ${PWD}:/data jujhars13/docker-node-npm-bower-gulp gulp build
+    docker run --rm -v ${PWD}:/data jujhars13/docker-node-npm-bower-gulp gulp build
 
 ## Supported Tags
 Relating to the major nodejs version.
@@ -38,4 +38,4 @@ Relating to the major nodejs version.
 ### Usage
 So if you want to use Node V4
 
-    docker run -it --rm -v ${PWD}:/data jujhars13/docker-node-npm-bower-gulp:4
+    docker run --rm -v ${PWD}:/data jujhars13/docker-node-npm-bower-gulp:4 bower install
