@@ -30,9 +30,8 @@ Your project directory should be mapped to the `/data` directory:
 
 ```
     docker run \
-    --rm -v \
-    ${PWD}:/data \
-    -e DISABLE_NOTIFIER=true
+    --rm -v ${PWD}:/data \
+    -e DISABLE_NOTIFIER=true \
     jujhars13/docker-node-npm-bower-gulp \
     gulp build
 ```
