@@ -40,6 +40,7 @@ Your project directory should be mapped to the `/data` directory:
 Relating to the major nodejs version.
 
 - [4](https://github.com/jujhars13/docker-node-npm-bower-gulp/blob/4/Dockerfile)
+- [4.2.2](https://github.com/jujhars13/docker-node-npm-bower-gulp/blob/4.2.2/Dockerfile)
 - [5](https://github.com/jujhars13/docker-node-npm-bower-gulp/blob/5/Dockerfile)
 - [latest](https://github.com/jujhars13/docker-node-npm-bower-gulp/blob/master/Dockerfile)
 
