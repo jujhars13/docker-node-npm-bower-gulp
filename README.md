@@ -26,8 +26,13 @@ Your project directory should be mapped to the `/data` directory:
     docker run --rm -v ${PWD}:/data jujhars13/docker-node-npm-bower-gulp bower install
 
 #### Run `gulp build`
-
-    docker run --rm -v ${PWD}:/data jujhars13/docker-node-npm-bower-gulp gulp build
+**NB** the `DISABLE_NOTIFIER=true` env var that's passed in as gulp-notify doesn't play well if the terminal is not attached [@see](https://github.com/mikaelbr/gulp-notify)
+    docker run \
+    --rm -v \
+    ${PWD}:/data \
+    -e DISABLE_NOTIFIER=true
+    jujhars13/docker-node-npm-bower-gulp \
+    gulp build
 
 ## Supported Tags
 Relating to the major nodejs version.
