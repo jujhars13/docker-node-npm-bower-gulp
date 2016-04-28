@@ -1,4 +1,4 @@
-FROM library/node:latest
+FROM library/node:5
 MAINTAINER Jujhar Singh <jujhar+docker@jujhar.com>
 
 # Install Bower & Grunt
