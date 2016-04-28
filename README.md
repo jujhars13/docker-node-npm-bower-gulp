@@ -5,9 +5,11 @@ Inspired by [DigitallySeamless/docker-nodejs-bower-grunt](https://github.com/Dig
 
 [![dockeri.co](http://dockeri.co/image/jujhars13/docker-node-npm-bower-gulp)](https://hub.docker.com/r/jujhars13/docker-node-npm-bower-gulp/)
 
-### Usage
 
-    docker run -it --rm jujhars13/docker-node-npm-bower-gulp
+### Usage
+Your project should be mapped to the `/data` directory as that's the default eg
+
+    docker run -it --rm -v ${PWD}:/data jujhars13/docker-node-npm-bower-gulp
 
 #### Run `node`
 
@@ -26,7 +28,13 @@ Inspired by [DigitallySeamless/docker-nodejs-bower-grunt](https://github.com/Dig
     docker run -it --rm jujhars13/docker-node-npm-bower-gulp gulp
 
 ## Supported Tags
-relating to the nodejs version:
+Relating to the major nodejs version.
 
-- 4
-- [latest]
+- [4](https://github.com/jujhars13/docker-node-npm-bower-gulp/blob/4/Dockerfile)
+- [5](https://github.com/jujhars13/docker-node-npm-bower-gulp/blob/5/Dockerfile)
+- [latest](https://github.com/jujhars13/docker-node-npm-bower-gulp/blob/master/Dockerfile)
+
+### Usage
+So if you want to use Node V4
+
+    docker run -it --rm -v ${PWD}:/data jujhars13/docker-node-npm-bower-gulp:4
