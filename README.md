@@ -1,7 +1,7 @@
 # docker-node-npm-bower-gulp
 Node.js w/ NPM, Bower and Grunt for automated builds and deployments where you want to fix the node version.  Node V6 broke our automated builds and so we needed this repo.
 
-We're using this image at [Voxpopme](https://www.voxpopme.com) to ensure we have consistent builds of our angular apps.
+Using this image at [Voxpopme](https://www.voxpopme.com) to ensure we have consistent builds of our angular apps.
 
 Inspired by [DigitallySeamless/docker-nodejs-bower-grunt](https://github.com/DigitallySeamless/docker-nodejs-bower-grunt/)
 
